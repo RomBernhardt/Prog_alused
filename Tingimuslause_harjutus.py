@@ -49,10 +49,7 @@ def is_in_string(letter: str, word: str) -> bool:
     :param word: given word.
     :return: boolean depending on if given letter is in given word.
     """
-    if letter in word:
-        return "True"
-    else:
-        return "False"
+    return letter in word
 
 
 def are_same_length(str_a: str, str_b: str) -> bool:
@@ -66,10 +63,7 @@ def are_same_length(str_a: str, str_b: str) -> bool:
     :param str_a: second string
     :return boolean True or False.
     """
-    if len(str_a) == len(str_b):
-        return "True"
-    else:
-        return "False"
+    return len(str_a) == len(str_b)
 
 def is_letter_or_digit(symbol: str) -> str:
     """
@@ -101,7 +95,7 @@ def are_last_symbols_same(str_a: str, str_b: str) -> bool:
     :param str_b: second string.
     :return boolean.
     """
-    # your code goes here
+    return str_a[-1] == str_b[-1]
 
 
 def hundred(num_a: int) -> int:
